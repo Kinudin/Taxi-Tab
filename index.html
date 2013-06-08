@@ -9,11 +9,14 @@
 <link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
 <link type="text/css" rel="apple-touch-startup-image" href="images/splash.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
 <link type="text/css" rel="apple-touch-startup-image" href="images/splash.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+<!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.css">
-<link rel="stylesheet" type="text/css" href="css/notbad.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/notbad.css"> -->
+
+<!-- Scripts -->
 <script src="http:////ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.3.1.js"></script>
-<script src="scripts.js"></script>
+<script src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -44,10 +47,14 @@
 
 <div  id="info" class="ui-content" data-role="popup" data-theme="a">
 <p>
-    Taxi Tab is an app that will make your life easier when trying to split the bill. Once this app is completed, there will be no moer fumbling about with calculators trying to see ho is trying to get out of paying lss for your ride.
+    Taxi Tab is an app that will make your life easier when trying to split the bill. Once this app is completed, there will be no more fumbling about with calculators trying to see who is trying to get out of paying less for your ride.
 </p>
 <p>
-    All of the information displayed in this app isn't relly all that difficult to find. The convenience is it's all in <br>one location.</p>
+    All of the information displayed in this app isn't really all that difficult to find. The convenience is it's all in <br>one location.
+</p>
+<p>
+    As always, you should have <b>MORE</b> fare than required. This is just common curtesy, and you should always be prepared (but not obligated) to tip your driver.
+</p>
 <p>
     Solely authored by Eric Cross.
 </p>
@@ -164,6 +171,7 @@
             <button onClick="calculate()" data-mini="true" data-inline="true">Calculate</button>
             </div>
             <br>
+            <span id="fees"></span> <br>
             <span id="theTotal"></span>
         </div>
 
@@ -385,7 +393,7 @@
         </nav>
     </div> <!-- Close footer-->
 </div>
-
 <!-- END DESTINATIONS-->
+
 </body>
 </html>
