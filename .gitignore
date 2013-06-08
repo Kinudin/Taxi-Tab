@@ -1,2 +1,6 @@
 
 *.bak
+*.pdf
+*.sublime*
+.gitignore
+.DS_Store
