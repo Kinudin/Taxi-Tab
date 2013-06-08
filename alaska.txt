@@ -1,0 +1,40 @@
+<!-- Alaska -->
+<div id="alaska" data-role="page">
+<div data-role="header" data-position="fixed" data-id="fixedHeader">
+<h1>Western States</h1>
+<nav data-role="navbar">
+<ul>
+<li><a href="alaska.html" class="ui-btn-active ui-state-persist">Alaska</a></li>
+<li><a href="arizona.html">Arizona</a></li>
+<li><a href="#california">California</a></li>
+<li><a href="colorado">Colorado</a></li>
+<li><a href="nevada">Nevada</a></li>
+</ul>
+</nav>
+</div><!-- /header -->
+</div>
+
+------------------------
+
+<!-- Arizona -->
+<div id="arizona" data-role="page">
+<div data-role="header" data-position="fixed" data-id="fixedHeader">
+<h1>Western States</h1>
+<nav data-role="navbar">
+<ul>
+<li><a href="#alaska">Alaska</a></li>
+<li><a href="#arizona" class="ui-btn-active ui-state-persist">Arizona</a></li>
+<li><a href="#california">California</a></li>
+<li><a href="#colorado">Colorado</a></li>
+<li><a href="#nevada">Nevada</a></li>
+</ul>
+</nav>
+</div><!-- /header -->
+<div data-role="content">	
+<a href="#alaska" data-role="button" data-direction="reverse" data-icon="back">Back</a>
+<p>The state of Arizona has the Grand Canyon</p>
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed" data-id="fixedHeader">	
+<p>Footer Stuff</p>		
+</div><!-- /content -->
+</div><!-- /page -->
