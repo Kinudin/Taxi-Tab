@@ -3316,6 +3316,13 @@ div.ui-slider-switch.ui-mini {
 .ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push {
 	margin-right: 1px;
 }
+
+.totals {
+border: 1px solid black;
+}
+#eachPays {
+	font-size: 2em;
+}
 /* wrap on wide viewports once open */
 @media (min-width:55em){
 	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
@@ -3339,6 +3346,8 @@ div.ui-slider-switch.ui-mini {
 	}	
 }
 
+
+
 /*
 	MEDIA QUERIES
 */
@@ -3347,9 +3356,6 @@ div.ui-slider-switch.ui-mini {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-	#theTotal {
-		color: green;
-	}
 	#northPark p{
 	float: right;
 	}
@@ -3358,6 +3364,21 @@ and (orientation : landscape) {
 	}
 	#tierrasanta img {
 		max-width: 500px;
+	}
+	#delMar p{
+	float: right;
+	}
+	#honeyRidge p {
+		float: right;
+	}
+	#honeyRidge img {
+		max-width: 500px;
+	}
+
+	#info{
+		width: px;
+		height: 768px;
+		margin-top: -50px;
 	}
 }
 
@@ -3383,14 +3404,40 @@ and (orientation : portrait){
 	#tierrasanta img {
 		max-width: 500px;
 	}
+	#delMar {
+		text-align: center;
+	}
+	#delMar p {
+		float: none;
+	}
+	#delMar img {
+		max-width: 500px;
+	}
+	#honeyRidge {
+		text-align: center;
+	}
+	#honeyRidge p {
+		float: none;
+	}
+	#honeyRidge img {
+		max-width: 500px;
+	}
 }
 /* iPhone 2G-4S*/
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-#filterService img{
- max-width: 100px;
-}
+	
+	#filterService img{
+	 max-width: 100px;
+	}
+
+	#info{
+		font-size: .9em;
+		text-align: justify;
+		width: 300px;
+		overflow: none;
+	}
 	#northPark {
 		text-align: center;
 	}
@@ -3402,6 +3449,23 @@ and (max-device-width : 480px) {
 	}
 	#tierrasanta img {
 		max-width: 200px;
+	}
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+	#info{
+		width: 470px;
+		height: 100px;
+		margin-top: -50px;
+	}
+	#aboutButton{
+		position: absolute;
+		left: 270px;
+		top: 250px;
 	}
 
 }

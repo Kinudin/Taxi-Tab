@@ -24,8 +24,7 @@ function calculate(){
 	document.getElementById('theTotal').innerHTML = 'Total: $' + total.toFixed(2);	
 }
 
-function calculateFee (total, numPeople, fee) {
-	alert('Total: ' + total + 'Fee: ' + fee);
+function calculateFee (total, numPeople) {
 	eachPaysFunc = total/numPeople;
 	eachPaysFunc = eachPaysFunc.toFixed(2);
 	return eachPaysFunc;
