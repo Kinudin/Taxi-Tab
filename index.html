@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<title>jQuery Mobile</title>
+<title>Taxi Tab</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -28,18 +28,33 @@
 
 <div id="page1" data-role="page" data-theme="a"> <!-- jQMobile looks for data-role -->
    	<div data-role="header" data-position="fixed" data-id="fixedHeader"><h1>Taxi Tab</h1>
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
+    <!-- <button data-icon="refresh" onClick="window.location.reload()">Reload</button> -->
     <a href="#info" data-icon="gear" data-rel="dialog" class="ui-btn-right">About</a>
 
     </div> <!-- Headers center stuff.-->
-	<div data-role="content" data-iscroll>
-    	<ul>
-        	<li>Something</li>
-            <li>SOmething else</li>
-            <li>Third something</li>   
-            <li>Fourth something</li>
-            <li>Fifth something</li>
-        </ul>
+	<div data-role="content" data-iscroll class="frontPage">
+    	<center><img src="images/taxiTabLogo.png" alt="Taxi Tab Logo" style="border-radius:600px; overflow:hidden;"></center>
+        <br>
+        <div class="ui-grid-a">
+            <div class="ui-block-a" style="padding: 10px;">
+                <p>
+                    Don't be bad!
+                </p>
+            </div>
+            <div class="ui-block-b" style="padding: 10px;">
+                <p>
+                    Call a cab!
+                </p>
+            </div>
+        </div>
+        <div class="instructionsPortrait" style="margin-top: 100px; height: 10px;">
+            <img src="images/portraitInstructions.png" alt="Portrait Instructions">
+        </div>
+        <div class="instructionsLandscape">
+        <p>
+            <img src="images/landscapeInstructions.png" alt="Landscape Instructions" style="margin-top: -10px;">
+        </p>
+        </div>
     </div>
     <div data-role="footer" data-position="fixed" data-id="fixedHeader">
        	<nav data-role="navbar">
@@ -72,10 +87,28 @@
     </div>
 </div>
 
+<!-- Tutorial -->
+
+<div  id="tutorial" data-role="dialog" data-theme="a">
+    <div data-role="content" data-iscroll>
+        <p>
+            Taxi Tab is an app that will make your life easier when trying to split the bill. Once this app is completed, there will be no more fumbling about with calculators trying to see who is trying to get out of paying less for your ride.
+        </p>
+        <p>
+            All of the information displayed in this app isn't really all that difficult to find. The convenience is it's all in one location.
+        </p>
+        <p>
+            As always, you should have <b>MORE</b> fare than required. This is just common curtesy, and you should always be prepared (but not obligated) to tip your driver.
+        </p>
+        <p>
+            Solely authored by Eric Cross.
+        </p>
+        <a href="index.html" data-role="button" data-rel="back" data-inline="true" data-mini="true" data-icon="delete" id="aboutButton">Good to know.</a>
+    </div>
+</div>
 
 <div data-role="page" id="filterService" data-theme="a">
 <div data-role="header" data-position="fixed" data-id="fixedHeader">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
 
     <h1>Cab services</h1>
 </div>
@@ -129,7 +162,6 @@
 
 <div id="page2" data-role="page" data-theme="b"> <!-- jQMobile looks for data-role -->
     <div data-role="header" data-position="fixed" data-id="fixedHeader">
-        <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
         <h1>Where do you want to go?</h1>
 	</div> <!-- Headers center stuff.-->
     <div data-role="content" data-iscroll>
@@ -156,9 +188,8 @@
 
 <div id="page3" data-role="page" data-theme="b"> <!-- jQMobile looks for data-role -->
     <div data-role="header" data-position="fixed" data-id="fixedHeader">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
-
-        <h1>Calculate</h1>
+<!--     <button data-icon="refresh" onClick="window.location.reload()">Reload</button>
+ -->        <h1>Calculate</h1>
     </div> <!-- Headers center stuff.-->
     <div data-role="content" data-iscroll>
         <div class="ui-grid-a">
@@ -179,7 +210,9 @@
             </div>
         </div>
         <div class="ui-grid-a">
-            <div class="ui-block-a"></div>
+            <div class="ui-block-a">
+                 
+            </div>
             <div class="ui-block-b">
             <button onClick="calculate()" data-mini="true" data-inline="true">Calculate</button>
             </div>
@@ -301,7 +334,6 @@
 <!-- END CAB PAGES -->
 <!-- BEGIN DESTINATIOS -->
 <div data-role="page" id="northPark" data-theme="a">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button>  <!-- This is the reload button -->
 
     <div data-role="header" data-position="fixed" data-id="fixedHeader"><h1>North Park to Downtown Overview</h1>
     <a href="#page2" data-role="button" data-rel="back" data-inline="true" data-mini="true" data-icon="arrow-l" data-direction="reverse">Back</a>
@@ -330,7 +362,6 @@
 </div>
 <!-- #Tierrasanta -->
 <div data-role="page" id="tierrasanta" data-theme="a">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
     <div data-role="header" data-position="fixed" data-id="fixedHeader"><h1>Tierrasanta to the Art Institute</h1>
     <a href="#page2" data-role="button" data-rel="back" data-inline="true" data-mini="true" data-icon="arrow-l" data-direction="reverse">Back</a>
 
@@ -359,7 +390,6 @@
 
 <!-- #HoneyRidge -->
 <div data-role="page" id="honeyRidge" data-theme="a">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
     <div data-role="header" data-position="fixed" data-id="fixedHeader"><h1>Honey Ridge to Del Mar</h1>
     <a href="#page2" data-role="button" data-rel="back" data-inline="true" data-mini="true" data-icon="arrow-l" data-direction="reverse">Back</a>
 
@@ -388,7 +418,6 @@
 
 <!-- #DelMar -->
 <div data-role="page" id="delMar" data-theme="a">
-    <button data-icon="refresh" onClick="window.location.reload()">Reload</button> <!-- This is the reload button -->
     <div data-role="header" data-position="fixed" data-id="fixedHeader"><h1>Del Mar to UNION</h1>
     <a href="#page2" data-role="button" data-rel="back" data-inline="true" data-mini="true" data-icon="arrow-l" data-direction="reverse">Back</a>
 

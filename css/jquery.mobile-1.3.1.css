@@ -3317,6 +3317,11 @@ div.ui-slider-switch.ui-mini {
 	margin-right: 1px;
 }
 
+.frontPage {
+	text-align: center;
+	font-size: 2em;
+}
+
 .totals {
 border: 1px solid black;
 }
@@ -3376,9 +3381,23 @@ and (orientation : landscape) {
 	}
 
 	#info{
-		width: px;
 		height: 768px;
 		margin-top: -50px;
+	}
+	.frontPage {
+	text-align: left;
+	}
+
+	.frontPage img {
+		max-height: 400px;
+		float: left;
+		margin-right: 20px;
+	}
+	.instructionsLandscape{
+		visibility: visible;
+	}
+	.instructionsPortrait {
+		visibility: hidden;
 	}
 }
 
@@ -3421,6 +3440,21 @@ and (orientation : portrait){
 	}
 	#honeyRidge img {
 		max-width: 500px;
+	}
+	.frontPage {
+		text-align: left;
+	}
+
+	.frontPage img {
+		max-height: 400px;
+	}
+	.instructionsLandscape{
+		visibility: hidden;
+	}
+	.instructionsPortrait {
+		visibility: visible;
+		position: relative;
+		top: 100px;
 	}
 }
 /* iPhone 2G-4S*/
